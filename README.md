@@ -4,6 +4,32 @@ An animated, interactive web showcase for [**mattpocock/skills**](https://github
 
 Explore the **Idea-to-Ship** workflow spine, find the right skill for your current engineering blocker with an interactive `/ask-matt` router, and inspect all 18 skills with bespoke animated vector icons and responsive hover effects.
 
+![Hero Overview and Quick Install](docs/screenshots/01-hero.png)
+
+---
+
+## Interface Walkthrough
+
+### 1. Animated Idea-to-Ship Spine
+Interactive 6-stage pipeline (`/grill-me` → `/to-spec` → `/to-tickets` → `/implement` → `/code-review` → `/pr`) with spring-driven progress tracking, shared-element `layoutId` active borders, and live stage previews.
+
+![Animated Idea-to-Ship Spine](docs/screenshots/02-idea-to-ship.png)
+
+### 2. Interactive `/ask-matt` Scenario Router
+Pick a common engineering blocker or type what you are facing in natural language to get the recommended ordered skill track with one-click command copy.
+
+![Interactive /ask-matt Scenario Router](docs/screenshots/03-ask-matt-router.png)
+
+### 3. Filterable Skills Catalog & Hover Choreography
+Browse all 18 mapped skills across 4 categories with instant search, pointer-tracking radial hover lighting, and bespoke Framer Motion SVG icon animations on every card.
+
+![Filterable Skills Catalog with Hover Spotlight](docs/screenshots/04-skills-catalog.png)
+
+### 4. Slide-Over Skill Detail Drawer
+Click any skill from the pipeline, router, or catalog to inspect when to use it, what the agent executes step by step, copyable slash commands, ready-to-use prompt examples, and connected skills.
+
+![Slide-Over Skill Detail Drawer](docs/screenshots/05-skill-detail-drawer.png)
+
 ---
 
 ## Features
@@ -89,6 +115,8 @@ Then run `/setup-matt-pocock-skills` once inside your project to calibrate docs,
 ## Project Structure
 
 ```text
+docs/
+└── screenshots/               # Desktop walkthrough screenshots for README
 src/
 ├── components/
 │   ├── AskMattRouter.tsx      # Interactive /ask-matt scenario & query router
